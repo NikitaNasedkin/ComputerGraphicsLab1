@@ -12,7 +12,8 @@ namespace ComputerGraphicsLab1
 {
     public partial class Form1 : Form
     {
-            Bitmap image;
+        Bitmap image;
+        Stack<Bitmap> images = new Stack<Bitmap>();
         public Form1()
         {
             InitializeComponent();
@@ -43,7 +44,7 @@ namespace ComputerGraphicsLab1
 
         private void BackgroundWorker1_DoWork(object sender, DoWorkEventArgs e)
         {
-            Bitmap newImage = ((Filters)e.Argument).processImage(image, backgroundWorker1);
+            Bitmap newImage = ((Filters)e.Argument).processImage(image, backgroundWorker1, images);
             if (backgroundWorker1.CancellationPending != true)
                 image = newImage;
         }
@@ -185,6 +186,17 @@ namespace ComputerGraphicsLab1
                             break;
                     }
                 }
+            }
+        }
+
+        private void НазадToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (images.Count != 0)
+            {
+                Bitmap oldImage = images.Pop();
+                image = oldImage;
+                pictureBox1.Image = oldImage;
+                pictureBox1.Refresh();
             }
         }
     }

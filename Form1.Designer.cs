@@ -57,6 +57,7 @@
             this.резкость2ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.фильтрШарраToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.фильтрПрюиттаToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.назадToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -85,7 +86,8 @@
             // 
             this.файлToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.открытьToolStripMenuItem,
-            this.сохранитьToolStripMenuItem});
+            this.сохранитьToolStripMenuItem,
+            this.назадToolStripMenuItem});
             this.файлToolStripMenuItem.Name = "файлToolStripMenuItem";
             this.файлToolStripMenuItem.Size = new System.Drawing.Size(48, 20);
             this.файлToolStripMenuItem.Text = "Файл";
@@ -296,6 +298,13 @@
             this.фильтрПрюиттаToolStripMenuItem.Text = "фильтр Прюитта";
             this.фильтрПрюиттаToolStripMenuItem.Click += new System.EventHandler(this.ФильтрПрюиттаToolStripMenuItem_Click);
             // 
+            // назадToolStripMenuItem
+            // 
+            this.назадToolStripMenuItem.Name = "назадToolStripMenuItem";
+            this.назадToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.назадToolStripMenuItem.Text = "Назад";
+            this.назадToolStripMenuItem.Click += new System.EventHandler(this.НазадToolStripMenuItem_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -348,6 +357,7 @@
         private System.Windows.Forms.ToolStripMenuItem резкость2ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem фильтрШарраToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem фильтрПрюиттаToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem назадToolStripMenuItem;
     }
 }
 

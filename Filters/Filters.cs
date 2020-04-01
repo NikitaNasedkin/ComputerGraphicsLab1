@@ -11,8 +11,15 @@ namespace ComputerGraphicsLab1
 {
    abstract class Filters
     {
-        public Bitmap processImage(Bitmap sourceImage, BackgroundWorker worker)
+        public Bitmap processImage(Bitmap sourceImage, BackgroundWorker worker, Stack<Bitmap> bitmaps)
         {
+            if (sourceImage == null)
+            {
+                MessageBox.Show("Откройте изображение");
+                return null;
+            }
+            bitmaps.Push(sourceImage);
+
             Bitmap resultImage = new Bitmap(sourceImage.Width, sourceImage.Height);
 
             for(int i = 0; i < sourceImage.Width; i++)
