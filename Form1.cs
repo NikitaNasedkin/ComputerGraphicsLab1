@@ -73,5 +73,119 @@ namespace ComputerGraphicsLab1
             Filters filter = new BlurFilter();
             backgroundWorker1.RunWorkerAsync(filter);
         }
+
+        private void ФильтрГауссаToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Filters filter = new GaussianFilter();
+            backgroundWorker1.RunWorkerAsync(filter);
+        }
+
+        private void ПолутонToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Filters filter = new GrayScaleFilter();
+            backgroundWorker1.RunWorkerAsync(filter);
+        }
+
+        private void СепияToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Filters filter = new SepiaFilter();
+            backgroundWorker1.RunWorkerAsync(filter);
+        }
+
+        private void УвеличитьЯркостьToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Filters filter = new BrightUpFilter();
+            backgroundWorker1.RunWorkerAsync(filter);
+        }
+
+        private void ФильтрСобеляToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Filters filter = new SobelFilter();
+            backgroundWorker1.RunWorkerAsync(filter);
+        }
+
+        private void УвеличитьРезкостьToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Filters filter = new SharpnessFilter();
+            backgroundWorker1.RunWorkerAsync(filter);
+        }
+
+        private void ТиснениеToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Filters filter = new EmbosingFilter();
+            backgroundWorker1.RunWorkerAsync(filter);
+        }
+
+        private void ВлевоToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Filters filter = new ShiftLeftFilter();
+            backgroundWorker1.RunWorkerAsync(filter);
+        }
+
+        private void ПоворотToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Filters filter = new RotationFilter();
+            backgroundWorker1.RunWorkerAsync(filter);
+        }
+
+        private void ВолныToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Filters filter = new WavesFilter();
+            backgroundWorker1.RunWorkerAsync(filter);
+        }
+
+        private void СтеклоToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Filters filter = new GlassFilter();
+            backgroundWorker1.RunWorkerAsync(filter);
+        }
+
+        private void MoutionBlurToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Filters filter = new MotionBlurFilter();
+            backgroundWorker1.RunWorkerAsync(filter);
+        }
+
+        private void Резкость2ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Filters filter = new Sharpness2Filter();
+            backgroundWorker1.RunWorkerAsync(filter);
+        }
+
+        private void ФильтрШарраToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Filters filter = new ScharrFilter();
+            backgroundWorker1.RunWorkerAsync(filter);
+        }
+
+        private void ФильтрПрюиттаToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Filters filter = new PrewittFilter();
+            backgroundWorker1.RunWorkerAsync(filter);
+        }
+
+        private void СохранитьToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (pictureBox1.Image != null)
+            {
+                SaveFileDialog dialog = new SaveFileDialog();
+                dialog.Filter = "Png Image | *.png | JPeg Image | *.jpg | Bitmap Image | *.bmp";
+                if (dialog.ShowDialog() == DialogResult.OK)
+                {
+                    switch (dialog.FilterIndex)
+                    {
+                        case 1:
+                            image.Save(dialog.FileName, System.Drawing.Imaging.ImageFormat.Png);
+                            break;
+                        case 2:
+                            image.Save(dialog.FileName, System.Drawing.Imaging.ImageFormat.Jpeg);
+                            break;
+                        case 3:
+                            image.Save(dialog.FileName, System.Drawing.Imaging.ImageFormat.Bmp);
+                            break;
+                    }
+                }
+            }
+        }
     }
 }
