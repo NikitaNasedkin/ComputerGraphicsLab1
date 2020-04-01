@@ -199,5 +199,17 @@ namespace ComputerGraphicsLab1
                 pictureBox1.Refresh();
             }
         }
+
+        private void СерыйМирToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Filters filter = new GrayWorldFilter();
+            backgroundWorker1.RunWorkerAsync(filter);
+        }
+
+        private void HistogramLinearStretchFilterToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Filters filter = new HistogramLinearStretchFilter();
+            backgroundWorker1.RunWorkerAsync(filter);
+        }
     }
 }

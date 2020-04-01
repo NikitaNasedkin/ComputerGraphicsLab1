@@ -58,6 +58,8 @@
             this.фильтрШарраToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.фильтрПрюиттаToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.назадToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.серыйМирToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.histogramLinearStretchFilterToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -85,7 +87,7 @@
             this.фильтрыToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(125, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(245, 24);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -155,7 +157,9 @@
             this.moutionBlurToolStripMenuItem,
             this.резкость2ToolStripMenuItem,
             this.фильтрШарраToolStripMenuItem,
-            this.фильтрПрюиттаToolStripMenuItem});
+            this.фильтрПрюиттаToolStripMenuItem,
+            this.серыйМирToolStripMenuItem,
+            this.histogramLinearStretchFilterToolStripMenuItem});
             this.матричныеToolStripMenuItem.Name = "матричныеToolStripMenuItem";
             this.матричныеToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.матричныеToolStripMenuItem.Text = "Матричные";
@@ -315,6 +319,20 @@
             this.назадToolStripMenuItem.Text = "Назад";
             this.назадToolStripMenuItem.Click += new System.EventHandler(this.НазадToolStripMenuItem_Click);
             // 
+            // серыйМирToolStripMenuItem
+            // 
+            this.серыйМирToolStripMenuItem.Name = "серыйМирToolStripMenuItem";
+            this.серыйМирToolStripMenuItem.Size = new System.Drawing.Size(182, 22);
+            this.серыйМирToolStripMenuItem.Text = "Серый мир";
+            this.серыйМирToolStripMenuItem.Click += new System.EventHandler(this.СерыйМирToolStripMenuItem_Click);
+            // 
+            // histogramLinearStretchFilterToolStripMenuItem
+            // 
+            this.histogramLinearStretchFilterToolStripMenuItem.Name = "histogramLinearStretchFilterToolStripMenuItem";
+            this.histogramLinearStretchFilterToolStripMenuItem.Size = new System.Drawing.Size(225, 22);
+            this.histogramLinearStretchFilterToolStripMenuItem.Text = "HistogramLinearStretchFilter";
+            this.histogramLinearStretchFilterToolStripMenuItem.Click += new System.EventHandler(this.HistogramLinearStretchFilterToolStripMenuItem_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -369,6 +387,8 @@
         private System.Windows.Forms.ToolStripMenuItem фильтрШарраToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem фильтрПрюиттаToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem назадToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem серыйМирToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem histogramLinearStretchFilterToolStripMenuItem;
     }
 }
 

@@ -53,6 +53,8 @@
     <Compile Include="Filters\GaussianFilter.cs" />
     <Compile Include="Filters\GlassFilter.cs" />
     <Compile Include="Filters\GrayScaleFilter.cs" />
+    <Compile Include="Filters\GrayWorldFilter.cs" />
+    <Compile Include="Filters\HistogramLinearStretchFilter.cs" />
     <Compile Include="Filters\InvertFilter.cs" />
     <Compile Include="Filters\MatrixFilter.cs" />
     <Compile Include="Filters\MotionBlurFilter.cs" />

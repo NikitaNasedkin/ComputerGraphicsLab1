@@ -11,7 +11,7 @@ namespace ComputerGraphicsLab1
 {
    abstract class Filters
     {
-        public Bitmap processImage(Bitmap sourceImage, BackgroundWorker worker, Stack<Bitmap> bitmaps)
+        public virtual Bitmap processImage(Bitmap sourceImage, BackgroundWorker worker, Stack<Bitmap> bitmaps)
         {
             if (sourceImage == null)
             {
