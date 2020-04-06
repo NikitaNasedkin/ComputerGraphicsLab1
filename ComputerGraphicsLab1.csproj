@@ -50,6 +50,7 @@
     <Compile Include="Filters\BrightUpFilter.cs" />
     <Compile Include="Filters\DilationFilter.cs" />
     <Compile Include="Filters\EmbosingFilter.cs" />
+    <Compile Include="Filters\ErrosionFilter.cs" />
     <Compile Include="Filters\Filters.cs" />
     <Compile Include="Filters\GaussianFilter.cs" />
     <Compile Include="Filters\GlassFilter.cs" />

@@ -62,6 +62,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.mathMogphologyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dilationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.errosionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -339,7 +340,8 @@
             // mathMogphologyToolStripMenuItem
             // 
             this.mathMogphologyToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.dilationToolStripMenuItem});
+            this.dilationToolStripMenuItem,
+            this.errosionToolStripMenuItem});
             this.mathMogphologyToolStripMenuItem.Name = "mathMogphologyToolStripMenuItem";
             this.mathMogphologyToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.mathMogphologyToolStripMenuItem.Text = "Math Mogphology";
@@ -350,6 +352,13 @@
             this.dilationToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.dilationToolStripMenuItem.Text = "Dilation";
             this.dilationToolStripMenuItem.Click += new System.EventHandler(this.DilationToolStripMenuItem_Click);
+            // 
+            // errosionToolStripMenuItem
+            // 
+            this.errosionToolStripMenuItem.Name = "errosionToolStripMenuItem";
+            this.errosionToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.errosionToolStripMenuItem.Text = "Erosion";
+            this.errosionToolStripMenuItem.Click += new System.EventHandler(this.ErosionToolStripMenuItem_Click);
             // 
             // Form1
             // 
@@ -409,6 +418,7 @@
         private System.Windows.Forms.ToolStripMenuItem histogramLinearStretchFilterToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem mathMogphologyToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem dilationToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem errosionToolStripMenuItem;
     }
 }
 
