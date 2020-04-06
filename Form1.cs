@@ -241,5 +241,11 @@ namespace ComputerGraphicsLab1
             Filters filter = new MedianFilter();
             backgroundWorker1.RunWorkerAsync(filter);
         }
+
+        private void PerfectRefletorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Filters filter = new PerfectReflector();
+            backgroundWorker1.RunWorkerAsync(filter);
+        }
     }
 }

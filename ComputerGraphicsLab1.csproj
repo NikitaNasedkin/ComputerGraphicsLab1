@@ -64,6 +64,7 @@
     <Compile Include="Filters\MathMorphologyFilter.cs" />
     <Compile Include="Filters\MatrixFilter.cs" />
     <Compile Include="Filters\MotionBlurFilter.cs" />
+    <Compile Include="Filters\PerfectReflector.cs" />
     <Compile Include="Filters\PrewittFilter.cs" />
     <Compile Include="Filters\RotationFilter.cs" />
     <Compile Include="Filters\ScharrFilter.cs" />

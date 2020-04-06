@@ -66,6 +66,7 @@
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.button1 = new System.Windows.Forms.Button();
             this.medianToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.perfectRefletorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -149,7 +150,8 @@
             this.поворотToolStripMenuItem,
             this.волныToolStripMenuItem,
             this.стеклоToolStripMenuItem,
-            this.medianToolStripMenuItem});
+            this.medianToolStripMenuItem,
+            this.perfectRefletorToolStripMenuItem});
             this.точнчныеToolStripMenuItem.Name = "точнчныеToolStripMenuItem";
             this.точнчныеToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.точнчныеToolStripMenuItem.Text = "Точнчные";
@@ -389,6 +391,13 @@
             this.medianToolStripMenuItem.Text = "Median";
             this.medianToolStripMenuItem.Click += new System.EventHandler(this.MedianToolStripMenuItem_Click_1);
             // 
+            // perfectRefletorToolStripMenuItem
+            // 
+            this.perfectRefletorToolStripMenuItem.Name = "perfectRefletorToolStripMenuItem";
+            this.perfectRefletorToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.perfectRefletorToolStripMenuItem.Text = "Perfect Refletor";
+            this.perfectRefletorToolStripMenuItem.Click += new System.EventHandler(this.PerfectRefletorToolStripMenuItem_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -451,6 +460,7 @@
         private System.Windows.Forms.ToolStripMenuItem openingToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem cLosingToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem medianToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem perfectRefletorToolStripMenuItem;
     }
 }
 
