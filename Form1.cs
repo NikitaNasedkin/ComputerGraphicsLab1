@@ -223,5 +223,11 @@ namespace ComputerGraphicsLab1
             Filters filter = new ErosionFilter();
             backgroundWorker1.RunWorkerAsync(filter);
         }
+
+        private void OpeningToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Filters filter = new OpeningFilter();
+            backgroundWorker1.RunWorkerAsync(filter);
+        }
     }
 }

@@ -57,12 +57,13 @@
             this.фильтрПрюиттаToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.серыйМирToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.histogramLinearStretchFilterToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.progressBar1 = new System.Windows.Forms.ProgressBar();
-            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            this.button1 = new System.Windows.Forms.Button();
             this.mathMogphologyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dilationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.errosionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.progressBar1 = new System.Windows.Forms.ProgressBar();
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            this.button1 = new System.Windows.Forms.Button();
+            this.openingToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -309,6 +310,31 @@
             this.histogramLinearStretchFilterToolStripMenuItem.Text = "HistogramLinearStretchFilter";
             this.histogramLinearStretchFilterToolStripMenuItem.Click += new System.EventHandler(this.HistogramLinearStretchFilterToolStripMenuItem_Click);
             // 
+            // mathMogphologyToolStripMenuItem
+            // 
+            this.mathMogphologyToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.dilationToolStripMenuItem,
+            this.errosionToolStripMenuItem});
+            this.mathMogphologyToolStripMenuItem.Name = "mathMogphologyToolStripMenuItem";
+            this.mathMogphologyToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.mathMogphologyToolStripMenuItem.Text = "Math Mogphology";
+            // 
+            // dilationToolStripMenuItem
+            // 
+            this.dilationToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.openingToolStripMenuItem});
+            this.dilationToolStripMenuItem.Name = "dilationToolStripMenuItem";
+            this.dilationToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.dilationToolStripMenuItem.Text = "Dilation";
+            this.dilationToolStripMenuItem.Click += new System.EventHandler(this.DilationToolStripMenuItem_Click);
+            // 
+            // errosionToolStripMenuItem
+            // 
+            this.errosionToolStripMenuItem.Name = "errosionToolStripMenuItem";
+            this.errosionToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.errosionToolStripMenuItem.Text = "Erosion";
+            this.errosionToolStripMenuItem.Click += new System.EventHandler(this.ErosionToolStripMenuItem_Click);
+            // 
             // progressBar1
             // 
             this.progressBar1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
@@ -337,28 +363,12 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.Button1_Click);
             // 
-            // mathMogphologyToolStripMenuItem
+            // openingToolStripMenuItem
             // 
-            this.mathMogphologyToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.dilationToolStripMenuItem,
-            this.errosionToolStripMenuItem});
-            this.mathMogphologyToolStripMenuItem.Name = "mathMogphologyToolStripMenuItem";
-            this.mathMogphologyToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.mathMogphologyToolStripMenuItem.Text = "Math Mogphology";
-            // 
-            // dilationToolStripMenuItem
-            // 
-            this.dilationToolStripMenuItem.Name = "dilationToolStripMenuItem";
-            this.dilationToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.dilationToolStripMenuItem.Text = "Dilation";
-            this.dilationToolStripMenuItem.Click += new System.EventHandler(this.DilationToolStripMenuItem_Click);
-            // 
-            // errosionToolStripMenuItem
-            // 
-            this.errosionToolStripMenuItem.Name = "errosionToolStripMenuItem";
-            this.errosionToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.errosionToolStripMenuItem.Text = "Erosion";
-            this.errosionToolStripMenuItem.Click += new System.EventHandler(this.ErosionToolStripMenuItem_Click);
+            this.openingToolStripMenuItem.Name = "openingToolStripMenuItem";
+            this.openingToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.openingToolStripMenuItem.Text = "Opening";
+            this.openingToolStripMenuItem.Click += new System.EventHandler(this.OpeningToolStripMenuItem_Click);
             // 
             // Form1
             // 
@@ -419,6 +429,7 @@
         private System.Windows.Forms.ToolStripMenuItem mathMogphologyToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem dilationToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem errosionToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem openingToolStripMenuItem;
     }
 }
 
