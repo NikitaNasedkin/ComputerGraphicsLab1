@@ -48,6 +48,7 @@
   <ItemGroup>
     <Compile Include="Filters\BlurFilter.cs" />
     <Compile Include="Filters\BrightUpFilter.cs" />
+    <Compile Include="Filters\DilationFilter.cs" />
     <Compile Include="Filters\EmbosingFilter.cs" />
     <Compile Include="Filters\Filters.cs" />
     <Compile Include="Filters\GaussianFilter.cs" />
@@ -56,6 +57,7 @@
     <Compile Include="Filters\GrayWorldFilter.cs" />
     <Compile Include="Filters\HistogramLinearStretchFilter.cs" />
     <Compile Include="Filters\InvertFilter.cs" />
+    <Compile Include="Filters\MathMorphologyFilter.cs" />
     <Compile Include="Filters\MatrixFilter.cs" />
     <Compile Include="Filters\MotionBlurFilter.cs" />
     <Compile Include="Filters\PrewittFilter.cs" />

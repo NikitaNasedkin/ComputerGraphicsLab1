@@ -211,5 +211,11 @@ namespace ComputerGraphicsLab1
             Filters filter = new HistogramLinearStretchFilter();
             backgroundWorker1.RunWorkerAsync(filter);
         }
+
+        private void DilationToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Filters filter = new DilationFilter();
+            backgroundWorker1.RunWorkerAsync(filter);
+        }
     }
 }
