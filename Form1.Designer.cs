@@ -45,6 +45,8 @@
             this.поворотToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.волныToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.стеклоToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.medianToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.perfectRefletorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.матричныеToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.размытиеToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.фильтрГауссаToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -62,13 +64,10 @@
             this.openingToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.errosionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cLosingToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.setKernelToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.button1 = new System.Windows.Forms.Button();
-            this.medianToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.perfectRefletorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.setKernelToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.setKernelToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -97,7 +96,7 @@
             this.setKernelToolStripMenuItem1});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(245, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(196, 24);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -223,6 +222,20 @@
             this.стеклоToolStripMenuItem.Text = "Стекло";
             this.стеклоToolStripMenuItem.Click += new System.EventHandler(this.СтеклоToolStripMenuItem_Click);
             // 
+            // medianToolStripMenuItem
+            // 
+            this.medianToolStripMenuItem.Name = "medianToolStripMenuItem";
+            this.medianToolStripMenuItem.Size = new System.Drawing.Size(178, 22);
+            this.medianToolStripMenuItem.Text = "Median";
+            this.medianToolStripMenuItem.Click += new System.EventHandler(this.MedianToolStripMenuItem_Click_1);
+            // 
+            // perfectRefletorToolStripMenuItem
+            // 
+            this.perfectRefletorToolStripMenuItem.Name = "perfectRefletorToolStripMenuItem";
+            this.perfectRefletorToolStripMenuItem.Size = new System.Drawing.Size(178, 22);
+            this.perfectRefletorToolStripMenuItem.Text = "Perfect Refletor";
+            this.perfectRefletorToolStripMenuItem.Click += new System.EventHandler(this.PerfectRefletorToolStripMenuItem_Click);
+            // 
             // матричныеToolStripMenuItem
             // 
             this.матричныеToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -322,8 +335,7 @@
             // 
             this.mathMogphologyToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.dilationToolStripMenuItem,
-            this.errosionToolStripMenuItem,
-            this.setKernelToolStripMenuItem});
+            this.errosionToolStripMenuItem});
             this.mathMogphologyToolStripMenuItem.Name = "mathMogphologyToolStripMenuItem";
             this.mathMogphologyToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.mathMogphologyToolStripMenuItem.Text = "Math Mogphology";
@@ -340,7 +352,7 @@
             // openingToolStripMenuItem
             // 
             this.openingToolStripMenuItem.Name = "openingToolStripMenuItem";
-            this.openingToolStripMenuItem.Size = new System.Drawing.Size(120, 22);
+            this.openingToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.openingToolStripMenuItem.Text = "Opening";
             this.openingToolStripMenuItem.Click += new System.EventHandler(this.OpeningToolStripMenuItem_Click);
             // 
@@ -356,9 +368,16 @@
             // cLosingToolStripMenuItem
             // 
             this.cLosingToolStripMenuItem.Name = "cLosingToolStripMenuItem";
-            this.cLosingToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.cLosingToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
             this.cLosingToolStripMenuItem.Text = "Closing";
             this.cLosingToolStripMenuItem.Click += new System.EventHandler(this.ClosingToolStripMenuItem_Click);
+            // 
+            // setKernelToolStripMenuItem1
+            // 
+            this.setKernelToolStripMenuItem1.Name = "setKernelToolStripMenuItem1";
+            this.setKernelToolStripMenuItem1.Size = new System.Drawing.Size(71, 20);
+            this.setKernelToolStripMenuItem1.Text = "Set Kernel";
+            this.setKernelToolStripMenuItem1.Click += new System.EventHandler(this.SetKernelToolStripMenuItem1_Click);
             // 
             // progressBar1
             // 
@@ -387,34 +406,6 @@
             this.button1.Text = "Отмена";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.Button1_Click);
-            // 
-            // medianToolStripMenuItem
-            // 
-            this.medianToolStripMenuItem.Name = "medianToolStripMenuItem";
-            this.medianToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.medianToolStripMenuItem.Text = "Median";
-            this.medianToolStripMenuItem.Click += new System.EventHandler(this.MedianToolStripMenuItem_Click_1);
-            // 
-            // perfectRefletorToolStripMenuItem
-            // 
-            this.perfectRefletorToolStripMenuItem.Name = "perfectRefletorToolStripMenuItem";
-            this.perfectRefletorToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.perfectRefletorToolStripMenuItem.Text = "Perfect Refletor";
-            this.perfectRefletorToolStripMenuItem.Click += new System.EventHandler(this.PerfectRefletorToolStripMenuItem_Click);
-            // 
-            // setKernelToolStripMenuItem
-            // 
-            this.setKernelToolStripMenuItem.Name = "setKernelToolStripMenuItem";
-            this.setKernelToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.setKernelToolStripMenuItem.Text = "Set Kernel";
-            this.setKernelToolStripMenuItem.Click += new System.EventHandler(this.SetKernelToolStripMenuItem_Click);
-            // 
-            // setKernelToolStripMenuItem1
-            // 
-            this.setKernelToolStripMenuItem1.Name = "setKernelToolStripMenuItem1";
-            this.setKernelToolStripMenuItem1.Size = new System.Drawing.Size(71, 20);
-            this.setKernelToolStripMenuItem1.Text = "Set Kernel";
-            this.setKernelToolStripMenuItem1.Click += new System.EventHandler(this.SetKernelToolStripMenuItem1_Click);
             // 
             // Form1
             // 
@@ -479,7 +470,6 @@
         private System.Windows.Forms.ToolStripMenuItem cLosingToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem medianToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem perfectRefletorToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem setKernelToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem setKernelToolStripMenuItem1;
     }
 }
