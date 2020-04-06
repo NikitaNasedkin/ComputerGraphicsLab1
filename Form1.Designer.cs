@@ -59,12 +59,13 @@
             this.histogramLinearStretchFilterToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mathMogphologyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dilationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.openingToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.errosionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cLosingToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.button1 = new System.Windows.Forms.Button();
-            this.openingToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.cLosingToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.medianToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -147,7 +148,8 @@
             this.сдвигToolStripMenuItem,
             this.поворотToolStripMenuItem,
             this.волныToolStripMenuItem,
-            this.стеклоToolStripMenuItem});
+            this.стеклоToolStripMenuItem,
+            this.medianToolStripMenuItem});
             this.точнчныеToolStripMenuItem.Name = "точнчныеToolStripMenuItem";
             this.точнчныеToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.точнчныеToolStripMenuItem.Text = "Точнчные";
@@ -329,6 +331,13 @@
             this.dilationToolStripMenuItem.Text = "Dilation";
             this.dilationToolStripMenuItem.Click += new System.EventHandler(this.DilationToolStripMenuItem_Click);
             // 
+            // openingToolStripMenuItem
+            // 
+            this.openingToolStripMenuItem.Name = "openingToolStripMenuItem";
+            this.openingToolStripMenuItem.Size = new System.Drawing.Size(120, 22);
+            this.openingToolStripMenuItem.Text = "Opening";
+            this.openingToolStripMenuItem.Click += new System.EventHandler(this.OpeningToolStripMenuItem_Click);
+            // 
             // errosionToolStripMenuItem
             // 
             this.errosionToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -337,6 +346,13 @@
             this.errosionToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.errosionToolStripMenuItem.Text = "Erosion";
             this.errosionToolStripMenuItem.Click += new System.EventHandler(this.ErosionToolStripMenuItem_Click);
+            // 
+            // cLosingToolStripMenuItem
+            // 
+            this.cLosingToolStripMenuItem.Name = "cLosingToolStripMenuItem";
+            this.cLosingToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.cLosingToolStripMenuItem.Text = "Closing";
+            this.cLosingToolStripMenuItem.Click += new System.EventHandler(this.ClosingToolStripMenuItem_Click);
             // 
             // progressBar1
             // 
@@ -366,19 +382,12 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.Button1_Click);
             // 
-            // openingToolStripMenuItem
+            // medianToolStripMenuItem
             // 
-            this.openingToolStripMenuItem.Name = "openingToolStripMenuItem";
-            this.openingToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.openingToolStripMenuItem.Text = "Opening";
-            this.openingToolStripMenuItem.Click += new System.EventHandler(this.OpeningToolStripMenuItem_Click);
-            // 
-            // cLosingToolStripMenuItem
-            // 
-            this.cLosingToolStripMenuItem.Name = "cLosingToolStripMenuItem";
-            this.cLosingToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.cLosingToolStripMenuItem.Text = "Closing";
-            this.cLosingToolStripMenuItem.Click += new System.EventHandler(this.ClosingToolStripMenuItem_Click);
+            this.medianToolStripMenuItem.Name = "medianToolStripMenuItem";
+            this.medianToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.medianToolStripMenuItem.Text = "Median";
+            this.medianToolStripMenuItem.Click += new System.EventHandler(this.MedianToolStripMenuItem_Click_1);
             // 
             // Form1
             // 
@@ -441,6 +450,7 @@
         private System.Windows.Forms.ToolStripMenuItem errosionToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem openingToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem cLosingToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem medianToolStripMenuItem;
     }
 }
 

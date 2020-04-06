@@ -235,5 +235,11 @@ namespace ComputerGraphicsLab1
             Filters filter = new ClosingFilter();
             backgroundWorker1.RunWorkerAsync(filter);
         }
+
+        private void MedianToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            Filters filter = new MedianFilter();
+            backgroundWorker1.RunWorkerAsync(filter);
+        }
     }
 }
