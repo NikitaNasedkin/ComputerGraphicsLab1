@@ -67,6 +67,8 @@
             this.button1 = new System.Windows.Forms.Button();
             this.medianToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.perfectRefletorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.setKernelToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.setKernelToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -91,7 +93,8 @@
             this.menuStrip1.Dock = System.Windows.Forms.DockStyle.None;
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.файлToolStripMenuItem,
-            this.фильтрыToolStripMenuItem});
+            this.фильтрыToolStripMenuItem,
+            this.setKernelToolStripMenuItem1});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(245, 24);
@@ -319,7 +322,8 @@
             // 
             this.mathMogphologyToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.dilationToolStripMenuItem,
-            this.errosionToolStripMenuItem});
+            this.errosionToolStripMenuItem,
+            this.setKernelToolStripMenuItem});
             this.mathMogphologyToolStripMenuItem.Name = "mathMogphologyToolStripMenuItem";
             this.mathMogphologyToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.mathMogphologyToolStripMenuItem.Text = "Math Mogphology";
@@ -398,6 +402,20 @@
             this.perfectRefletorToolStripMenuItem.Text = "Perfect Refletor";
             this.perfectRefletorToolStripMenuItem.Click += new System.EventHandler(this.PerfectRefletorToolStripMenuItem_Click);
             // 
+            // setKernelToolStripMenuItem
+            // 
+            this.setKernelToolStripMenuItem.Name = "setKernelToolStripMenuItem";
+            this.setKernelToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.setKernelToolStripMenuItem.Text = "Set Kernel";
+            this.setKernelToolStripMenuItem.Click += new System.EventHandler(this.SetKernelToolStripMenuItem_Click);
+            // 
+            // setKernelToolStripMenuItem1
+            // 
+            this.setKernelToolStripMenuItem1.Name = "setKernelToolStripMenuItem1";
+            this.setKernelToolStripMenuItem1.Size = new System.Drawing.Size(71, 20);
+            this.setKernelToolStripMenuItem1.Text = "Set Kernel";
+            this.setKernelToolStripMenuItem1.Click += new System.EventHandler(this.SetKernelToolStripMenuItem1_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -461,6 +479,8 @@
         private System.Windows.Forms.ToolStripMenuItem cLosingToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem medianToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem perfectRefletorToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem setKernelToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem setKernelToolStripMenuItem1;
     }
 }
 

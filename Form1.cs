@@ -14,6 +14,8 @@ namespace ComputerGraphicsLab1
     {
         Bitmap image;
         Stack<Bitmap> images = new Stack<Bitmap>();
+        int[,] mathKernel = new int[3, 3];
+
         public Form1()
         {
             InitializeComponent();
@@ -246,6 +248,18 @@ namespace ComputerGraphicsLab1
         {
             Filters filter = new PerfectReflector();
             backgroundWorker1.RunWorkerAsync(filter);
+        }
+
+        private void SetKernelToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void SetKernelToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            KernelSetForm form = new KernelSetForm();
+            form.Show();
+            mathKernel = form.setKernel();
         }
     }
 }
