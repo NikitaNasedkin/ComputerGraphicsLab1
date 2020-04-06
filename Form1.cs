@@ -229,5 +229,11 @@ namespace ComputerGraphicsLab1
             Filters filter = new OpeningFilter();
             backgroundWorker1.RunWorkerAsync(filter);
         }
+
+        private void ClosingToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Filters filter = new ClosingFilter();
+            backgroundWorker1.RunWorkerAsync(filter);
+        }
     }
 }

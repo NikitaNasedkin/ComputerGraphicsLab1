@@ -64,6 +64,7 @@
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.button1 = new System.Windows.Forms.Button();
             this.openingToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cLosingToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -330,6 +331,8 @@
             // 
             // errosionToolStripMenuItem
             // 
+            this.errosionToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.cLosingToolStripMenuItem});
             this.errosionToolStripMenuItem.Name = "errosionToolStripMenuItem";
             this.errosionToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.errosionToolStripMenuItem.Text = "Erosion";
@@ -369,6 +372,13 @@
             this.openingToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.openingToolStripMenuItem.Text = "Opening";
             this.openingToolStripMenuItem.Click += new System.EventHandler(this.OpeningToolStripMenuItem_Click);
+            // 
+            // cLosingToolStripMenuItem
+            // 
+            this.cLosingToolStripMenuItem.Name = "cLosingToolStripMenuItem";
+            this.cLosingToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.cLosingToolStripMenuItem.Text = "Closing";
+            this.cLosingToolStripMenuItem.Click += new System.EventHandler(this.ClosingToolStripMenuItem_Click);
             // 
             // Form1
             // 
@@ -430,6 +440,7 @@
         private System.Windows.Forms.ToolStripMenuItem dilationToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem errosionToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem openingToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem cLosingToolStripMenuItem;
     }
 }
 

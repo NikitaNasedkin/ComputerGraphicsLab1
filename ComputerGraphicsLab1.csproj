@@ -48,6 +48,7 @@
   <ItemGroup>
     <Compile Include="Filters\BlurFilter.cs" />
     <Compile Include="Filters\BrightUpFilter.cs" />
+    <Compile Include="Filters\ClosingFilter.cs" />
     <Compile Include="Filters\OpeningFilter.cs" />
     <Compile Include="Filters\DilationFilter.cs" />
     <Compile Include="Filters\EmbosingFilter.cs" />
